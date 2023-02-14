@@ -1,12 +1,13 @@
 import React from "react";
 import "./Nav.css";
-import pig from "../images/pigFace.png";
+import pig from "../images/earlyLogo.gif";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: #63f280;
+  color: darkgreen;
+  text-shadow: 3px 3px 5px white;
   font-weight: 700;
 `;
 export default function Nav() {
@@ -14,7 +15,9 @@ export default function Nav() {
     <div className="nav--main">
       <ul className="nav--icons">
         <li>
-          <img className="nav--logo" src={pig} alt="Pigs for Peace" />
+          <Link to="/">
+            <img className="nav--logo" src={pig} alt="Pigs for Peace" />
+          </Link>
         </li>
         <li className="nav--group">
           <StyledLink to="/about" className="nav--icon">
