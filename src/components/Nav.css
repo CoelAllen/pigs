@@ -20,4 +20,7 @@ img.nav--logo {
 }
 .nav--icon {
   margin-inline: 0.5rem;
+  border-radius: 33%;
+  padding: 0.5rem;
+  background-color: white;
 }

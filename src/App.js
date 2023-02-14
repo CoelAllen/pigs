@@ -1,15 +1,16 @@
 import "./App.css";
 import React from "react";
 import Nav from "./components/Nav.js";
-import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home.js";
 import About from "./pages/About.js";
-import Contact from "./pages/contact.js";
-import Gallery from "./pages/gallery.js";
+import Contact from "./pages/Contact.js";
+import Gallery from "./pages/Gallery.js";
 import Pig from "./pages/Pig.js";
 function App() {
   return (
     <BrowserRouter>
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
