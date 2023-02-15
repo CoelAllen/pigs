@@ -9,6 +9,7 @@ const StyledLink = styled(Link)`
   color: darkgreen;
   text-shadow: 3px 3px 5px white;
   font-weight: 700;
+  font-size: x-large;
 `;
 export default function Nav() {
   return (
