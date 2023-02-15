@@ -1,0 +1,10 @@
+.about--main {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about--top {
+  display: flex;
+  margin: 3rem;
+}
