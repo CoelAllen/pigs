@@ -8,6 +8,7 @@ export default function Gallery() {
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod laborum
       quasi fuga, nam laboriosam suscipit voluptatem cumque in voluptatibus quis
       amet beatae excepturi, corporis consequuntur? Quasi sit ex soluta quos?
+      Hello from Gallery
     </h1>
   );
 }

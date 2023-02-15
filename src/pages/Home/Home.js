@@ -22,9 +22,8 @@ export default function Home() {
             With just a small commitment you can help guarantee the happiness of
             these rescued animals
           </p>
-          <div>
-            <a href="/volunteer">Learn More</a>
-          </div>
+
+          <a href="/volunteer">Learn More</a>
         </div>
       </div>
       <div className="home--info">
@@ -82,8 +81,11 @@ export default function Home() {
           <div className="home--extras">
             <img className="extras--thumb" src={summer} alt="Fern" />
             <div className="extras--text">
-              <h3>Hot Summer Days</h3>
-              <p>Scenes from a hot summer day at the Sanctuary...</p>
+              <h3>Summer's Day</h3>
+              <p>
+                Scenes of our friends keeping cool on a hot summer's day here at
+                the Sanctuary…
+              </p>
             </div>
           </div>
         </div>

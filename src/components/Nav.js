@@ -35,7 +35,9 @@ export default function Nav() {
           <Link to="/volunteer" className="nav--volunteer">
             VOLUNTEER
           </Link>
-          <div className="nav--donate">DONATE</div>
+          <Link to="/donate" className="nav--donate">
+            DONATE
+          </Link>
         </li>
       </ul>
     </div>

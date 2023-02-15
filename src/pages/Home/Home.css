@@ -26,7 +26,8 @@
   text-shadow: 1px 1px 3px black;
   margin-bottom: 2rem;
 }
-.banner--text > div > a {
+
+.banner--text > a {
   border: 2px solid white;
   color: white;
   padding-inline: 1.5rem;
@@ -35,6 +36,14 @@
   font-weight: 700;
   text-shadow: 1px 1px 3px black;
   text-decoration: none;
+}
+.banner--text > a:hover {
+  color: black;
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px black;
+  background-color: white;
 }
 
 .home--info {
@@ -57,11 +66,10 @@
 }
 .home--break {
   width: 100vw;
-  /* background-color: aqua; */
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-image: linear-gradient(white, aqua);
+  background-image: linear-gradient(white, darkolivegreen);
 }
 .home--extras {
   display: flex;
@@ -71,7 +79,7 @@
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.249);
   border-radius: 5px;
   cursor: pointer;
-  background-color: rgb(70, 253, 253);
+  background-color: rgb(152, 144, 74);
   padding: 0.5rem;
   height: 20vh;
 }
