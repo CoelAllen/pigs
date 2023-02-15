@@ -1,23 +1,27 @@
 .nav--main {
-  height: 40vh;
+  height: 8vh;
   /* background-image: linear-gradient(to right, #9ff0af, #dcf0e0); */
   display: flex;
   align-items: flex-end;
-  background-image: url("../images/pilgrimZiggy.jpeg");
-  background-size: cover;
-  background-position: center 80%;
-  background-repeat: no-repeat;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 .nav--icons {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   width: 100vw;
   list-style-type: none;
 }
-img.nav--logo {
-  height: 30vh;
+.icon--left {
+  display: flex;
 }
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .nav--group {
   display: flex;
   padding-right: 1rem;
@@ -25,4 +29,16 @@ img.nav--logo {
 .nav--icon {
   margin-inline: 0.5rem;
   padding: 0.5rem;
+}
+.nav--donate {
+  background-color: darkolivegreen;
+  padding: 0.5rem;
+  color: white;
+  margin-right: 2rem;
+}
+.nav--volunteer {
+  background-color: rgb(152, 144, 74);
+  padding: 0.5rem;
+  color: white;
+  margin-right: 1rem;
 }

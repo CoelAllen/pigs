@@ -1,3 +1,41 @@
+.banner--img {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+}
+.banner--text {
+  position: absolute;
+  width: 25vw;
+  bottom: 25vh;
+  left: 15vw;
+  background-image: radial-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.01),
+    rgba(0, 0, 0, 0)
+  );
+}
+.banner--text > h1 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+.banner--text > p {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+.banner--text > div {
+  border: 2px solid white;
+  color: white;
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+  width: 5vw;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px black;
+  cursor: pointer;
+}
+
 .home--info {
   display: flex;
   flex-direction: column;
@@ -16,7 +54,6 @@
   font-size: smaller;
   width: 20vw;
 }
-
 .home--break {
   width: 100vw;
   /* background-color: aqua; */

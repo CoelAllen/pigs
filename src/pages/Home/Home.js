@@ -9,10 +9,22 @@ import news from "../../images/recentNews.jpeg";
 import buttons from "../../images/buttonsSm.jpeg";
 import visit from "../../images/visitStory.jpeg";
 import summer from "../../images/hotDaysSm.jpeg";
+import banner from "../../images/pilgrimZiggy.jpeg";
 
 export default function Home() {
   return (
     <div className="home--main">
+      <div className="main--banner">
+        <img className="banner--img" src={banner} alt="" />
+        <div className="banner--text">
+          <h1>Help make something special, Volunteer!</h1>
+          <p>
+            With just a small commitment you can help guarantee the happiness of
+            these rescued animals
+          </p>
+          <div>Learn More</div>
+        </div>
+      </div>
       <div className="home--info">
         <h1>Welcome to Pigs' Peace Sanctuary</h1>
         <p>

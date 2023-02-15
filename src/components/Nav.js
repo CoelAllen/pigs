@@ -8,31 +8,33 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   color: darkgreen;
   text-shadow: 3px 3px 5px white;
-  font-weight: 700;
-  font-size: x-large;
+  font-weight: 400;
+  font-size: large;
 `;
 export default function Nav() {
   return (
     <div className="nav--main">
       <ul className="nav--icons">
-        <li>
-          <Link to="/">
-            <img className="nav--logo" src={pig} alt="Pigs for Peace" />
-          </Link>
+        <li className="icon--left">
+          <div>dropdown</div>
+          <Link to="/">Pig logo here</Link>
+          <div className="title">
+            <div>Pigs</div>
+            <div>Peace</div>
+          </div>
         </li>
         <li className="nav--group">
           <StyledLink to="/about" className="nav--icon">
-            about
+            WHO WE ARE
           </StyledLink>
           <StyledLink to="/pig" className="nav--icon">
-            pigs
+            MEET OUR FRIENDS
           </StyledLink>
           <StyledLink to="/contact" className="nav--icon">
-            contact
+            COMMON QUESTIONS
           </StyledLink>
-          <StyledLink to="/gallery" className="nav--icon">
-            gallery
-          </StyledLink>
+          <div className="nav--volunteer">VOLUNTEER</div>
+          <div className="nav--donate">DONATE</div>
         </li>
       </ul>
     </div>
