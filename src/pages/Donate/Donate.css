@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+.donate--main {
+  margin-top: 10vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main--text {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+}
+.main--list {
+  background-color: olivedrab;
+  padding: 2rem;
+  border-radius: 5px;
+}
