@@ -6,7 +6,7 @@
 .banner--text {
   position: absolute;
   width: 25vw;
-  bottom: 25vh;
+  bottom: 29vh;
   left: 15vw;
   background-image: radial-gradient(
     rgba(0, 0, 0, 0.7),
@@ -24,8 +24,9 @@
 .banner--text > p {
   color: white;
   text-shadow: 1px 1px 3px black;
+  margin-bottom: 2rem;
 }
-.banner--text > div {
+.banner--text > div > a {
   border: 2px solid white;
   color: white;
   padding-inline: 1.5rem;
@@ -33,7 +34,7 @@
   width: 5vw;
   font-weight: 700;
   text-shadow: 1px 1px 3px black;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .home--info {

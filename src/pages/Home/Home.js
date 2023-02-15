@@ -22,7 +22,9 @@ export default function Home() {
             With just a small commitment you can help guarantee the happiness of
             these rescued animals
           </p>
-          <div>Learn More</div>
+          <div>
+            <a href="/volunteer">Learn More</a>
+          </div>
         </div>
       </div>
       <div className="home--info">

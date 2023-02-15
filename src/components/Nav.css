@@ -1,9 +1,13 @@
 .nav--main {
   height: 8vh;
-  /* background-image: linear-gradient(to right, #9ff0af, #dcf0e0); */
   display: flex;
   align-items: flex-end;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgb(247, 244, 244);
 }
 .nav--icons {
   display: flex;
@@ -41,4 +45,5 @@
   padding: 0.5rem;
   color: white;
   margin-right: 1rem;
+  text-decoration: none;
 }

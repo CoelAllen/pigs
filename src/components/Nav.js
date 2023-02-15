@@ -1,6 +1,5 @@
 import React from "react";
 import "./Nav.css";
-import pig from "../images/earlyLogo.gif";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -27,13 +26,15 @@ export default function Nav() {
           <StyledLink to="/about" className="nav--icon">
             WHO WE ARE
           </StyledLink>
-          <StyledLink to="/pig" className="nav--icon">
+          <StyledLink to="/gallery" className="nav--icon">
             MEET OUR FRIENDS
           </StyledLink>
           <StyledLink to="/contact" className="nav--icon">
             COMMON QUESTIONS
           </StyledLink>
-          <div className="nav--volunteer">VOLUNTEER</div>
+          <Link to="/volunteer" className="nav--volunteer">
+            VOLUNTEER
+          </Link>
           <div className="nav--donate">DONATE</div>
         </li>
       </ul>
