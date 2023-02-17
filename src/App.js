@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import Nav from "./components/Nav.js";
+import Nav from "./components/Nav/Nav.js";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home.js";
 import About from "./pages/About/About.js";
@@ -9,6 +9,7 @@ import Gallery from "./pages/Gallery/Gallery.js";
 import Pig from "./pages/Pig.js";
 import Volunteer from "./pages/Volunteer/Volunteer.js";
 import Donate from "./pages/Donate/Donate.js";
+import Footer from "./components/Footer/Footer.js";
 
 // NOTE page list as follows:
 // home/nav: static page, links to everything
@@ -36,6 +37,7 @@ function App() {
         <Route path="/volunteer" element={<Volunteer />} />
         <Route path="/donate" element={<Donate />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

@@ -1,0 +1,54 @@
+.banner--img {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+}
+.banner--text {
+  position: absolute;
+  width: 25vw;
+  bottom: 29vh;
+  left: 15vw;
+  background-image: radial-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.01),
+    rgba(0, 0, 0, 0)
+  );
+}
+.banner--text > h1 {
+  font-size: 3rem;
+  color: whitesmoke;
+  text-shadow: 1px 1px 3px black;
+  text-decoration: underline;
+}
+.banner--text > p {
+  color: #660033;
+  text-shadow: 1px 1px 3px rgb(228, 78, 78);
+  margin-bottom: 2rem;
+  font-size: larger;
+  font-style: italic;
+}
+.quote {
+  color: #660033;
+  text-shadow: 1px 1px 3px rgb(228, 78, 78);
+  text-align: end;
+}
+.body--text {
+  width: 40vw;
+  margin-left: 15vw;
+  margin-top: 5rem;
+  font-size: larger;
+  font-weight: 300;
+  line-height: 2.25rem;
+}
+.body--photos {
+  width: 100%;
+  margin: auto;
+  margin-top: 5rem;
+  text-align: center;
+}
+.body--photos > img {
+  height: 50vh;
+  margin: 3rem;
+}
