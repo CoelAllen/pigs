@@ -1,0 +1,46 @@
+.modal--main {
+  overflow-y: auto;
+}
+.modal--button {
+  background-color: rgb(152, 144, 74);
+  height: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.modal--button:active {
+  transform: scale(0.98);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.button--shift {
+  display: flex;
+  justify-content: flex-end;
+}
+.modal--body {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  border: 2px solid black;
+  background-color: whitesmoke;
+  overflow-y: scroll;
+  padding: 2rem;
+  width: 40vw;
+}
+.body--text {
+  line-height: 2.25rem;
+}
+.list--text {
+  padding: 0.5rem;
+  font-size: large;
+}
+.body--list {
+  background-color: rgb(152, 144, 74);
+  padding: 0.5rem;
+  list-style: none;
+  border-radius: 5px;
+}

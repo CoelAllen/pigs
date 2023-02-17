@@ -1,5 +1,5 @@
 import React from "react";
-import "./Volunteer.css";
+import styles from "./volunteer.module.css";
 import banner from "../../images/betsyGreeted.jpeg";
 import vol1 from "../../images/volunteer300.jpeg";
 import vol2 from "../../images/volunteer300b.jpeg";
@@ -9,19 +9,19 @@ import Guidelines from "../../components/Modals/Guidelines.js";
 export default function Volunteer() {
   return (
     <>
-      <div className="main--banner">
-        <img className="banner--img" src={banner} alt="" />
-        <div className="banner--text">
+      <div className={styles["main--banner"]}>
+        <img className={styles["banner--img"]} src={banner} alt="" />
+        <div className={styles["banner--text"]}>
           <p>
             I am convinced that my life belongs to the whole community; and as
             long as I live, it is my privilege to do for it whatever I can, for
             the harder I work the more I live.
           </p>
-          <div className="quote">— George Bernard Shaw</div>
+          <div className={styles["quote"]}>— George Bernard Shaw</div>
           <h1>Volunteer</h1>
         </div>
       </div>
-      <div className="body--text">
+      <div className={styles["body--text"]}>
         <p>
           Volunteers are an important part of the Pigs Peace family. Your
           contribution of time and effort helps improve the lives of all of our
@@ -48,16 +48,18 @@ export default function Volunteer() {
         <br />
         {/* NOTE gonna pop a guidelines modal here */}
         <p>
-          For more information please check our volunteer guidelines here{" "}
-          <Guidelines /> or send us your information and availability here{" "}
-          <button>FORM</button>
+          For more information please read our Volunteer Info Page or send us
+          your information and availability here.
         </p>
+        <div className="">
+          <Guidelines />
+          <button>FORM</button>
+        </div>
       </div>
-      <div className=""></div>
-      <div className="body--photos">
-        <img src={vol2} alt="" />
-        <img src={vol3} alt="" />
-        <img src={vol1} alt="" />
+      <div className={styles["body--photos"]}>
+        <img src={vol2} alt="Painting the barn" />
+        <img src={vol3} alt="Scooping" />
+        <img src={vol1} alt="Moving gravel" />
       </div>
     </>
   );
