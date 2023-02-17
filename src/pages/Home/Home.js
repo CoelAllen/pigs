@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import styles from "./home.module.css";
 import judy from "../../images/judy_with_judee.jpeg";
 import ella from "../../images/ellaSm.jpeg";
 import fern from "../../images/fernSm.jpeg";
@@ -13,10 +13,10 @@ import banner from "../../images/pilgrimZiggy.jpeg";
 
 export default function Home() {
   return (
-    <div className="home--main">
-      <div className="main--banner">
-        <img className="banner--img" src={banner} alt="" />
-        <div className="banner--text">
+    <div className={styles["home--main"]}>
+      <div className={styles["main--banner"]}>
+        <img className={styles["banner--img"]} src={banner} alt="" />
+        <div className={styles["banner--text"]}>
           <h1>Help make something special, Volunteer!</h1>
           <p>
             With just a small commitment you can help guarantee the happiness of
@@ -26,7 +26,7 @@ export default function Home() {
           <a href="/volunteer">Learn More</a>
         </div>
       </div>
-      <div className="home--info">
+      <div className={styles["home--info"]}>
         <h1>Welcome to Pigs' Peace Sanctuary</h1>
         <p>
           Pigs Peace Sanctuary is a place of tranquility and happiness located
@@ -37,16 +37,16 @@ export default function Home() {
           respect for all animals.
         </p>
         <img src={judy} alt="Judy with Judee" />
-        <div className="home--img-text">
+        <div className={styles["home--img-text"]}>
           Judy Woods with Judee the pig. One of many wonderful pig friends.
         </div>
       </div>
 
-      <div className="home--break">
-        <div className="break--block">
-          <div className="home--extras">
-            <img className="extras--thumb" src={ella} alt="Ella" />
-            <div className="extras--text">
+      <div className={styles["home--break"]}>
+        <div className={styles["break--block"]}>
+          <div className={styles["home--extras"]}>
+            <img className={styles["extras--thumb"]} src={ella} alt="Ella" />
+            <div className={styles["extras--text"]}>
               <h3>Ella</h3>
               <p>
                 A 3 week old potbellied piglet was bought on impulse for $100.
@@ -54,13 +54,13 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="home--extras">
+          <div className={styles["home--extras"]}>
             <img
-              className="extras--thumb"
+              className={styles["extras--thumb"]}
               src={placeToCall}
               alt="A place to call their own"
             />
-            <div className="extras--text">
+            <div className={styles["extras--text"]}>
               <h3>A Place to Call Their Own</h3>
               <p>
                 Unlike almost every other pig farm in creation, Pigs Peace
@@ -68,9 +68,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="home--extras">
-            <img className="extras--thumb" src={fern} alt="Fern" />
-            <div className="extras--text">
+          <div className={styles["home--extras"]}>
+            <img className={styles["extras--thumb"]} src={fern} alt="Fern" />
+            <div className={styles["extras--text"]}>
               <h3>Meet Fern</h3>
               <p>
                 Fern was my first potbellied pig and her gentle welcoming nature
@@ -78,9 +78,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="home--extras">
-            <img className="extras--thumb" src={summer} alt="Fern" />
-            <div className="extras--text">
+          <div className={styles["home--extras"]}>
+            <img className={styles["extras--thumb"]} src={summer} alt="Fern" />
+            <div className={styles["extras--text"]}>
               <h3>Summer's Day</h3>
               <p>
                 Scenes of our friends keeping cool on a hot summer's day here at
@@ -89,8 +89,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="break--block">
-          <div className="home--extras">
+        <div className={styles["break--block"]}>
+          <div className={styles["home--extras"]}>
             <div>
               <h3>Meet Buttons</h3>
               <p>
@@ -98,16 +98,24 @@ export default function Home() {
                 pigs were in-bred…
               </p>
             </div>
-            <img className="extras--thumb" src={buttons} alt="Buttons" />
+            <img
+              className={styles["extras--thumb"]}
+              src={buttons}
+              alt="Buttons"
+            />
           </div>
-          <div className="home--extras">
+          <div className={styles["home--extras"]}>
             <div>
               <h3>Recent News</h3>
               <p>What's been happening at the sanctuary this month...</p>
             </div>
-            <img className="extras--thumb" src={news} alt="Recent News" />
+            <img
+              className={styles["extras--thumb"]}
+              src={news}
+              alt="Recent News"
+            />
           </div>
-          <div className="home--extras">
+          <div className={styles["home--extras"]}>
             <div>
               <h3>Ziggy</h3>
               <p>
@@ -115,9 +123,9 @@ export default function Home() {
                 her cuteness!…
               </p>
             </div>
-            <img className="extras--thumb" src={ziggy} alt="Ziggy" />
+            <img className={styles["extras--thumb"]} src={ziggy} alt="Ziggy" />
           </div>
-          <div className="home--extras">
+          <div className={styles["home--extras"]}>
             <div>
               <h3>A Visit to the Sanctuary</h3>
               <p>
@@ -125,7 +133,7 @@ export default function Home() {
                 her cuteness!…
               </p>
             </div>
-            <img className="extras--thumb" src={visit} alt="Ziggy" />
+            <img className={styles["extras--thumb"]} src={visit} alt="Ziggy" />
           </div>
         </div>
       </div>

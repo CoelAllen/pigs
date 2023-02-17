@@ -1,16 +1,18 @@
 import React from "react";
-import "./About.css";
+import styles from "./about.module.css";
 import rainbow from "../../images/rainbow.jpeg";
 import visitors from "../../images/visitors.jpeg";
 // NOTE Remember to format for different screen sizing
 export default function About() {
   return (
     <>
-      <div className="about--main">
-        <div className="about--top">
+      <div className={styles["about--main"]}>
+        <div className={styles["about--top"]}>
           <div>
-            <h1 className="about--title">About Pigs Peace Sanctuary</h1>
-            <p className="about--text-left">
+            <h1 className={styles["about--title"]}>
+              About Pigs Peace Sanctuary
+            </h1>
+            <p className={styles["about--text-left"]}>
               Pigs Peace Sanctuary is a place of tranquility and happiness
               located one hour north of Seattle in the Pacific Northwest of the
               United States. The sanctuary sits on 39 acres of meadow and
@@ -40,11 +42,11 @@ export default function About() {
               pigs and all animals.
             </p>
           </div>
-          <img className="about--img" src={rainbow} alt="" />
+          <img className={styles["about--img"]} src={rainbow} alt="" />
         </div>
-        <div className="about--visit">
-          <div className="visit--block">
-            <div className="visit--text">
+        <div className={styles["about--visit"]}>
+          <div className={styles["visit--block"]}>
+            <div className={styles["visit--text"]}>
               <h2>Visiting the Sanctuary</h2>
               <p>
                 We welcome all visitors. But because the animals are here to be
@@ -54,7 +56,7 @@ export default function About() {
                 the pigs!
               </p>
             </div>
-            <div className="visit--links">
+            <div className={styles["visit--links"]}>
               <p>directions</p>
               <p>history</p>
               <p>wishlist</p>
@@ -62,9 +64,9 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="about--top">
-          <img className="about--img" src={visitors} alt="" />
-          <p className="about--text-right">
+        <div className={styles["about--top"]}>
+          <img className={styles["about--img"]} src={visitors} alt="" />
+          <p className={styles["about--text-right"]}>
             I was given a secondhand piglet, Fern, and I fell in love. As Fern
             grew up I knew that I had room for more pigs, so I called a
             well-known shelter. To my dismay, I discovered that they didn't help

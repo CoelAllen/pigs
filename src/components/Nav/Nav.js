@@ -1,5 +1,5 @@
 import React from "react";
-import "./Nav.css";
+import styles from "./nav.module.css";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -12,30 +12,30 @@ const StyledLink = styled(Link)`
 `;
 export default function Nav() {
   return (
-    <div className="nav--main">
-      <ul className="nav--icons">
-        <li className="icon--left">
+    <div className={styles["nav--main"]}>
+      <ul className={styles["nav--icons"]}>
+        <li className={styles["icon--left"]}>
           <div>dropdown</div>
           <Link to="/">Pig logo here</Link>
-          <div className="title">
+          <div className={styles["title"]}>
             <div>Pigs</div>
             <div>Peace</div>
           </div>
         </li>
-        <li className="nav--group">
-          <StyledLink to="/about" className="nav--icon">
+        <li className={styles["nav--group"]}>
+          <StyledLink to="/about" className={styles["nav--icon"]}>
             WHO WE ARE
           </StyledLink>
-          <StyledLink to="/gallery" className="nav--icon">
+          <StyledLink to="/gallery" className={styles["nav--icon"]}>
             MEET OUR FRIENDS
           </StyledLink>
-          <StyledLink to="/contact" className="nav--icon">
+          <StyledLink to="/contact" className={styles["nav--icon"]}>
             COMMON QUESTIONS
           </StyledLink>
-          <Link to="/volunteer" className="nav--volunteer">
+          <Link to="/volunteer" className={styles["nav--volunteer"]}>
             VOLUNTEER
           </Link>
-          <Link to="/donate" className="nav--donate">
+          <Link to="/donate" className={styles["nav--donate"]}>
             DONATE
           </Link>
         </li>
