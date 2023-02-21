@@ -4,7 +4,7 @@ import banner from "../../images/betsyGreeted.jpeg";
 import vol1 from "../../images/volunteer300.jpeg";
 import vol2 from "../../images/volunteer300b.jpeg";
 import vol3 from "../../images/volunteerScoopers300.jpeg";
-import Guidelines from "../../components/Modals/Guidelines.js";
+import Info from "../../components/Info/Info.js";
 
 export default function Volunteer() {
   return (
@@ -52,7 +52,7 @@ export default function Volunteer() {
           your information and availability here.
         </p>
         <div className="">
-          <Guidelines />
+          <Info />
           <button>FORM</button>
         </div>
       </div>

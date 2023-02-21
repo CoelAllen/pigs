@@ -1,6 +1,14 @@
 import React from "react";
 import styles from "./footer.module.css";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: large;
+`;
 
 export default function Footer() {
   return (
@@ -18,11 +26,15 @@ export default function Footer() {
         <div className={styles["info--block"]}>
           <ul>
             <h4>About us</h4>
-            <Link to="/message">
+            <StyledLink to="/message">
               <li>Message from Judy</li>
-            </Link>
-            <li>Why pigs?</li>
-            <li>Our friends</li>
+            </StyledLink>
+            <StyledLink to="/faq">
+              <li>Pig Info/FAQ</li>
+            </StyledLink>
+            <StyledLink to="/pigs">
+              <li>Our friends</li>
+            </StyledLink>
           </ul>
         </div>
         <div className={styles["info--block"]}>

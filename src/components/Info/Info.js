@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import styles from "./guidelines.module.css";
+import styles from "./info.module.css";
 import Modal from "@mui/material/Modal";
 
-export default function Guidelines() {
+export default function Info() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);

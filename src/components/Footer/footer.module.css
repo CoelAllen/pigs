@@ -13,6 +13,12 @@
   height: 60%;
   width: 60%;
 }
+ul {
+  list-style: none;
+}
+li {
+  margin-block: 1rem;
+}
 .info--block {
 }
 .main--links {
