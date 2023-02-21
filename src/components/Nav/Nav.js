@@ -15,11 +15,9 @@ export default function Nav() {
     <div className={styles["nav--main"]}>
       <ul className={styles["nav--icons"]}>
         <li className={styles["icon--left"]}>
-          <div>dropdown</div>
           <Link to="/">Pig logo here</Link>
           <div className={styles["title"]}>
-            <div>Pigs</div>
-            <div>Peace</div>
+            <div>Pigs Peace</div>
           </div>
         </li>
         <li className={styles["nav--group"]}>

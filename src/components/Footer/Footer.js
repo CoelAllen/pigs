@@ -20,7 +20,9 @@ export default function Footer() {
         <div className={styles["info--block"]}>
           <ul>
             <h4>How to help</h4>
-            <li>Donate</li>
+            <StyledLink to="/donate">
+              <li>Donate</li>
+            </StyledLink>
             <StyledLink to="/volunteer">
               <li>Volunteer</li>
             </StyledLink>

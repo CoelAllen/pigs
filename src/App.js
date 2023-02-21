@@ -11,6 +11,7 @@ import Volunteer from "./pages/Volunteer/Volunteer.js";
 import Donate from "./pages/Donate/Donate.js";
 import Footer from "./components/Footer/Footer.js";
 import Message from "./pages/Message/Message.js";
+import Faq from "./pages/FAQ/Faq.js";
 
 // NOTE page list as follows:
 // home/nav: static page, links to everything
@@ -38,6 +39,7 @@ function App() {
         <Route path="/volunteer" element={<Volunteer />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/message" element={<Message />} />
+        <Route path="/faq" element={<Faq />} />
       </Routes>
       <Footer />
     </BrowserRouter>

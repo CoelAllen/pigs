@@ -1,5 +1,4 @@
 .nav--main {
-  height: 8vh;
   display: flex;
   align-items: flex-end;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
@@ -10,11 +9,13 @@
   background-color: rgb(247, 244, 244);
 }
 .nav--icons {
+  height: 8vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100vw;
   list-style-type: none;
+  margin-block: 0;
 }
 .icon--left {
   display: flex;
