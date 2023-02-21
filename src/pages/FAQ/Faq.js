@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import styles from "./faq.module.css";
 import { HashLink } from "react-router-hash-link";
 import albert from "../../images/albert.jpeg";
@@ -7,6 +7,9 @@ import pals from "../../images/sleepingPals.jpeg";
 import door from "../../images/pigatdoor.jpeg";
 
 export default function Faq() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div id="top">
       <div className={styles["faq--main"]}>
@@ -124,10 +127,10 @@ export default function Faq() {
             preferences -- from friends of choice to food preferences. They are
             herd animals often exploring in curiosity during the day and
             sleeping in a "pig pile" side by side at night.{" "}
-            <HashLink smooth to="/faq#top">
-              Back to top.
-            </HashLink>
           </p>
+          <HashLink smooth to="/faq#top">
+            Back to top.
+          </HashLink>
         </div>
         {/* NOTE SECTION TWO */}
         <div id="section-two" className={styles["section"]}>
@@ -137,10 +140,10 @@ export default function Faq() {
             large barns, several quarantine barns, a chicken house, woods to
             explore and pastures to graze. We have created ponds for summer
             water fun.{" "}
-            <HashLink smooth to="/faq#top">
-              Back to top.
-            </HashLink>
           </p>
+          <HashLink smooth to="/faq#top">
+            Back to top.
+          </HashLink>
         </div>
         {/* NOTE SECTION THREE, FOUR AND FIVE */}
         <div id="section-three" className={styles["section"]}>
@@ -258,6 +261,13 @@ export default function Faq() {
                 Wow! Oscar weighs 655.36lbs! He wants visitors to know his
                 favorite treat is bananas!
               </p>
+              <HashLink
+                className={styles["section--text"]}
+                smooth
+                to="/faq#top"
+              >
+                Back to top
+              </HashLink>
             </div>
             <div className={styles["img--block"]}>
               <img src={door} alt="Oscar is waiting for a treat" />

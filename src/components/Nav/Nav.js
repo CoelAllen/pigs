@@ -27,7 +27,7 @@ export default function Nav() {
           <StyledLink to="/gallery" className={styles["nav--icon"]}>
             MEET OUR FRIENDS
           </StyledLink>
-          <StyledLink to="/contact" className={styles["nav--icon"]}>
+          <StyledLink to="/faq" className={styles["nav--icon"]}>
             COMMON QUESTIONS
           </StyledLink>
           <Link to="/volunteer" className={styles["nav--volunteer"]}>

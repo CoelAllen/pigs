@@ -1,5 +1,5 @@
 .faq--main {
-  padding-top: 10vh;
+  padding-top: 8vh;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,7 @@
   background-color: khaki;
   width: 100%;
   margin: auto;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 .top--questions {
   margin-right: 2rem;
@@ -42,7 +43,7 @@
   font-weight: 700;
 }
 .section--text {
-  width: 70vw;
+  width: auto;
   margin-left: 3rem;
   line-height: 2.25rem;
 }
