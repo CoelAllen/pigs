@@ -74,7 +74,7 @@ export default function Home() {
               <h3>Meet Fern</h3>
               <p>
                 Fern was my first potbellied pig and her gentle welcoming nature
-                has been a strong…
+                has been a strong foundation to Pigs Peace Sanctuary...
               </p>
             </div>
           </div>
@@ -83,8 +83,8 @@ export default function Home() {
             <div className={styles["extras--text"]}>
               <h3>Summer's Day</h3>
               <p>
-                Scenes of our friends keeping cool on a hot summer's day here at
-                the Sanctuary…
+                Some scenes of our friends trying to keep cool on a hot summer's
+                day here at the Sanctuary…
               </p>
             </div>
           </div>
