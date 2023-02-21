@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import styles from "./home.module.css";
 import judy from "../../images/judy_with_judee.jpeg";
 import ella from "../../images/ellaSm.jpeg";
@@ -12,6 +12,9 @@ import summer from "../../images/hotDaysSm.jpeg";
 import banner from "../../images/pilgrimZiggy.jpeg";
 
 export default function Home() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className={styles["home--main"]}>
       <div className={styles["main--banner"]}>

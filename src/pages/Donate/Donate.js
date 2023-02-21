@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import styles from "./donate.module.css";
 import child from "../../images/childVisitor.jpeg";
 
 export default function Donate() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className={styles["main"]}>
       <div className={styles["donate--main"]}>

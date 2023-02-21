@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import styles from "./volunteer.module.css";
 import banner from "../../images/betsyGreeted.jpeg";
 import vol1 from "../../images/volunteer300.jpeg";
@@ -7,6 +7,9 @@ import vol3 from "../../images/volunteerScoopers300.jpeg";
 import Info from "../../components/Info/Info.js";
 
 export default function Volunteer() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <div className={styles["main--banner"]}>

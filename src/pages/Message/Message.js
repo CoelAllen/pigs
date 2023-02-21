@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import styles from "./message.module.css";
 import judy from "../../images/judy4.jpeg";
 import sig from "../../images/judySig.gif";
 
 export default function Message() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className={styles["message--main"]}>
       <div className={styles["main--header"]}>

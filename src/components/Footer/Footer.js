@@ -3,6 +3,7 @@ import styles from "./footer.module.css";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Guidelines from "../Guidelines/Guidelines.js";
+import Wishlist from "../Wishlist/Wishlist.js";
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -23,7 +24,9 @@ export default function Footer() {
             <StyledLink to="/volunteer">
               <li>Volunteer</li>
             </StyledLink>
-            <li>Our Wish List</li>
+            <li>
+              <Wishlist />
+            </li>
           </ul>
         </div>
         <div className={styles["info--block"]}>
@@ -53,7 +56,12 @@ export default function Footer() {
       </div>
       <div className={styles["main--links"]}>
         <div>
-          Copyright 2023 Pigs Peace Sanctuary | | Site built by Coel Allen
+          Copyright 2023 Pigs Peace Sanctuary | | Site built by{" "}
+          <span>
+            <StyledLink to="https://www.github.com/coelallen">
+              Coel Allen
+            </StyledLink>
+          </span>
         </div>
         <div className={styles["links"]}>
           <div className={styles["links--block"]}>Contact</div>

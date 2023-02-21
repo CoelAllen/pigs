@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import styles from "./about.module.css";
 import rainbow from "../../images/rainbow.jpeg";
 import visitors from "../../images/visitors.jpeg";
 // NOTE Remember to format for different screen sizing
 export default function About() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <div className={styles["about--main"]}>
