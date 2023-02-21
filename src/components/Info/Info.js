@@ -15,8 +15,8 @@ export default function Info() {
       <Modal
         open={open}
         onClose={handleClose}
-        aria-labelledby="modal-guidelines"
-        aria-describedby="modal-guidelines"
+        aria-labelledby="modal-info"
+        aria-describedby="modal-info"
         className={styles["modal--main"]}
       >
         <div className={styles["modal--body"]}>

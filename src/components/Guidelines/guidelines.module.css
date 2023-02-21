@@ -1,0 +1,45 @@
+.modal--button {
+  cursor: pointer;
+}
+.modal--main {
+  overflow-y: auto;
+}
+
+.modal--body {
+  position: absolute;
+  top: 8%;
+  left: 40%;
+  background-color: whitesmoke;
+  border: 2px black solid;
+  padding: 2 rem;
+  width: 40vw;
+  overflow-y: scroll;
+}
+.body--text {
+  padding: 2rem;
+}
+.body--sig {
+  text-align: center;
+}
+.modal--close {
+  background-color: rgb(152, 144, 74);
+  height: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.modal--close:active {
+  transform: scale(0.98);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.button--shift {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./footer.module.css";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Guidelines from "../Guidelines/Guidelines.js";
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -19,7 +20,9 @@ export default function Footer() {
           <ul>
             <h4>How to help</h4>
             <li>Donate</li>
-            <li>Volunteer</li>
+            <StyledLink to="/volunteer">
+              <li>Volunteer</li>
+            </StyledLink>
             <li>Our Wish List</li>
           </ul>
         </div>
@@ -42,7 +45,9 @@ export default function Footer() {
             <h4>Visit</h4>
             <li>Schedule</li>
             <li>Directions</li>
-            <li>Guidelines</li>
+            <li>
+              <Guidelines />
+            </li>
           </ul>
         </div>
       </div>
