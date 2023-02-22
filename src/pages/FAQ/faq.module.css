@@ -43,7 +43,7 @@
   font-weight: 700;
 }
 .section--text {
-  width: auto;
+  width: 60vw;
   margin-left: 3rem;
   line-height: 2.25rem;
 }
