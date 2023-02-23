@@ -1,5 +1,6 @@
 .modal--open {
   background-color: darkolivegreen;
+  color: white;
   height: 1.5rem;
   padding: 0.5rem;
   border-radius: 3px;
@@ -20,21 +21,76 @@
   position: absolute;
   top: 10vh;
   left: 15vw;
-  width: 70vw;
-  height: 80vh;
+  width: 50vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
 }
 .body--header {
-  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
 }
 .form--inputs {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-inline: 2rem;
 }
 .form--input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 1rem;
 }
+.input {
+  width: 30vw;
+  margin-top: 0.5rem;
+}
+
 .input--week {
   display: flex;
+}
+.input--day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+}
+.input--textarea {
+  text-align: center;
+  margin-block: 1rem;
+}
+.form--buttons {
+  display: flex;
+  width: 100%;
+}
+.modal--submit {
+  background-color: rgb(152, 144, 74);
+  color: white;
+  height: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin: 1rem;
+}
+.modal--close {
+  background-color: darkolivegreen;
+  color: white;
+  height: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin: 1rem;
 }

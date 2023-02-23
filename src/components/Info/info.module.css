@@ -3,6 +3,7 @@
 }
 .modal--button {
   background-color: rgb(152, 144, 74);
+  color: white;
   height: 1.5rem;
   padding: 0.5rem;
   border-radius: 3px;
