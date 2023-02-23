@@ -33,16 +33,51 @@ export default function Form() {
               </p>
             </div>
             <div className={styles["form--inputs"]}>
-              <label htmlFor="name">Name:</label>
-              <input type="text" placeholder="Name" name="name" />
-              <label htmlFor="email">Email:</label>
-              <input type="email" placeholder="Email" name="email" />
-              <label htmlFor="phone">Phone Number:</label>
-              <input type="tel" placeholder="Phone Number" name="phone" />
-              <div>
-                <label htmlFor="sunday">Sunday</label>
-                <input type="checkbox" name="sunday" />
+              <div className={styles["form--input"]}>
+                <label htmlFor="name">Name:</label>
+                <input type="text" placeholder="Name" name="name" />
               </div>
+              <div className={styles["form--input"]}>
+                <label htmlFor="email">Email:</label>
+                <input type="email" placeholder="Email" name="email" />
+              </div>
+              <div className={styles["form--input"]}>
+                <label htmlFor="phone">Phone Number:</label>
+                <input type="tel" placeholder="Phone Number" name="phone" />
+              </div>
+              <h4>Please select which days you are available:</h4>
+              <div className={styles["input--week"]}>
+                <div>
+                  <label htmlFor="sunday">Sunday</label>
+                  <input type="checkbox" name="sunday" />
+                </div>
+                <div>
+                  <label htmlFor="monday">Monday</label>
+                  <input type="checkbox" name="monday" />
+                </div>
+                <div>
+                  <label htmlFor="tuesday">Tuesday</label>
+                  <input type="checkbox" name="tuesday" />
+                </div>
+                <div>
+                  <label htmlFor="wednesday">Wednesday</label>
+                  <input type="checkbox" name="wednesday" />
+                </div>
+                <div>
+                  <label htmlFor="thursday">Thursday</label>
+                  <input type="checkbox" name="thursday" />
+                </div>
+                <div>
+                  <label htmlFor="friday">Friday</label>
+                  <input type="checkbox" name="friday" />
+                </div>
+                <div>
+                  <label htmlFor="saturday">Saturday</label>
+                  <input type="checkbox" name="saturday" />
+                </div>
+              </div>
+              <label htmlFor="description">A little about yourself:</label>
+              <input type="textarea" name="description" />
             </div>
           </div>
         </form>
