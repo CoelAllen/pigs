@@ -1,0 +1,28 @@
+.modal--open {
+  background-color: darkolivegreen;
+  height: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.modal--open:active {
+  transform: scale(0.98);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.form--body {
+  background-color: whitesmoke;
+  position: absolute;
+  top: 10vh;
+  left: 15vw;
+  width: 70vw;
+  height: 80vh;
+}
+.body--header {
+  margin: 2rem;
+}

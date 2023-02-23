@@ -14,6 +14,9 @@
 }
 .list--block {
   display: flex;
+  background-color: khaki;
+  padding: 2rem;
+  border-radius: 5px;
 }
 .block--list {
   margin-right: 2rem;
@@ -25,6 +28,8 @@
 }
 .block--img > img {
   height: 35vh;
+  border-radius: 5px;
+  margin-top: 2rem;
 }
 .block--img > p {
   font-style: italic;

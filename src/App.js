@@ -25,8 +25,12 @@ import Facts from "./pages/Facts/Facts.js";
 // newsletter sign-up, form that saves to mongo db as subscriber? Maybe populate from their info?
 //                    Have to look into mass email stuff
 // NOTE that's pretty good for now, more pages to come.
-// This does equate to 2 tables:
-// one for pigs and the other for subscribers
+// Tables:
+//   pigs, subscribers, volunteers
+// NOTE backend stuff-->
+// set up routes (post and edit from owner page, get from pigs page) for get pigs, post pigs and edit pigs
+// set up routes (get/edit is from owner page, post is from vols form)for get subscribers, edit subs and post subs
+// set up routes(get/edit is from owner page, post is from form) for get volunteers, edit volunteers, post volunteers
 function App() {
   return (
     <BrowserRouter>

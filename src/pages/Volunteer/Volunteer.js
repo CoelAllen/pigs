@@ -5,6 +5,7 @@ import vol1 from "../../images/volunteer300.jpeg";
 import vol2 from "../../images/volunteer300b.jpeg";
 import vol3 from "../../images/volunteerScoopers300.jpeg";
 import Info from "../../components/Info/Info.js";
+import Form from "../../components/VolunteerForm/Form.js";
 
 export default function Volunteer() {
   useLayoutEffect(() => {
@@ -54,9 +55,9 @@ export default function Volunteer() {
           For more information please read our Volunteer Info Page or send us
           your information and availability here.
         </p>
-        <div className="">
+        <div className={styles["body--buttons"]}>
           <Info />
-          <button>FORM</button>
+          <Form />
         </div>
       </div>
       <div className={styles["body--photos"]}>
