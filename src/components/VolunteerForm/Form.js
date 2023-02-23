@@ -39,6 +39,10 @@ export default function Form() {
               <input type="email" placeholder="Email" name="email" />
               <label htmlFor="phone">Phone Number:</label>
               <input type="tel" placeholder="Phone Number" name="phone" />
+              <div>
+                <label htmlFor="sunday">Sunday</label>
+                <input type="checkbox" name="sunday" />
+              </div>
             </div>
           </div>
         </form>
