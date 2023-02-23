@@ -1,0 +1,31 @@
+.facts--main {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facts--main > ul {
+  width: 70vw;
+}
+.list--item {
+  font-size: larger;
+  line-height: 2rem;
+}
+.list--block {
+  display: flex;
+}
+.block--list {
+  margin-right: 2rem;
+}
+.block--img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block--img > img {
+  height: 35vh;
+}
+.block--img > p {
+  font-style: italic;
+}
