@@ -16,7 +16,7 @@
 }
 .about--img {
   height: 100%;
-  margin-top: 3rem;
+  margin-top: 8rem;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
@@ -31,34 +31,39 @@
   line-height: 1.75rem;
 }
 .about--visit {
-  border: 1px red solid;
   width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background-color: darkgreen;
 }
 .visit--block {
   width: 50%;
   display: flex;
+  width: 80%;
 }
 .visit--text {
-  border: 1px solid red;
   padding: 2rem;
   width: 50%;
+  margin: 2rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  background-color: whitesmoke;
+  border-radius: 5px;
 }
 .visit--text > p {
   font-weight: 300;
   line-height: 2rem;
   font-size: larger;
 }
+
 .visit--links {
-  border: 1px solid blue;
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
-.visit--links > p {
-  font-size: x-large;
+  padding-left: 2rem;
   margin: 2rem;
+  color: white;
+  font-size: larger;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px black;
 }

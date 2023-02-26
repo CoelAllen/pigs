@@ -2,7 +2,18 @@ import React, { useLayoutEffect } from "react";
 import styles from "./about.module.css";
 import rainbow from "../../images/rainbow.jpeg";
 import visitors from "../../images/visitors.jpeg";
+import Wishlist from "../../components/Wishlist/Wishlist.js";
+import { Link } from "react-router-dom";
+import Guidelines from "../../components/Guidelines/Guidelines.js";
+import styled from "styled-components";
 // NOTE Remember to format for different screen sizing
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  &:visited {
+    color: white;
+  }
+`;
 export default function About() {
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
@@ -54,16 +65,20 @@ export default function About() {
               <p>
                 We welcome all visitors. But because the animals are here to be
                 looked after, not looked at, we must limit visitation. Visiting
-                hours and directions are provided here. Please check the{" "}
+                hours and directions are provided{" "}
+                <StyledLink to="/contact">here</StyledLink>. Please check the{" "}
                 <strong>Wishlist</strong> and bring much appreciated treats for
                 the pigs!
               </p>
             </div>
             <div className={styles["visit--links"]}>
-              <p>directions</p>
-              <p>history</p>
-              <p>wishlist</p>
-              <p>donations</p>
+              <div>Schedule</div>
+
+              <Guidelines />
+              <Wishlist />
+              <StyledLink to="/donate" className={styled[""]}>
+                Donate
+              </StyledLink>
             </div>
           </div>
         </div>
